@@ -3,6 +3,49 @@
   "title": "All indicators",
   "resources": [
     {
+      "path": "1-2-1/data.csv",
+      "name": "1-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Demographic Characteristic",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total_Poverty",
+                "Male_Poverty",
+                "Female_Poverty",
+                "White_Alone_Poverty",
+                "Black_Alone_Poverty",
+                "American_Indian_Alaska_Native_Poverty",
+                "Asian_Poverty",
+                "Native_Hawaiian_Other_Pacific_Islander_Poverty",
+                "Other_Race_Poverty",
+                "Two_Or_More_Races_Poverty",
+                "Hispanic_Or_Latino_Poverty",
+                "White_Alone_Not_Hispanic_Latino_Poverty",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      },
+      "title": "Proportion of population living below the national poverty line, by sex and age"
+    },
+    {
       "path": "1-1-1/data.csv",
       "name": "1-1-1",
       "profile": "tabular-data-resource",
@@ -694,28 +737,6 @@
         ]
       },
       "title": "Proportion of population living in households with access to basic services"
-    },
-    {
-      "path": "1-2-1/data.csv",
-      "name": "1-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Year",
-            "type": "number"
-          },
-          {
-            "name": "Value",
-            "type": "number"
-          }
-        ]
-      },
-      "title": "Proportion of population living below the national poverty line, by sex and age"
     },
     {
       "path": "12-b-1/data.csv",
